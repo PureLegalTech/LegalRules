@@ -1,0 +1,25 @@
+extends: substitution
+message: Did the parties intend to agree to accord, novation, or release?
+description: "
+
+<b>'Accord'</b>
+<br>The term 'accord' means the agreement, which constitutes the promise to provide the 'satisfaction'. The term 'satisfaction' means the execution or performance of this promise. 
+<br>Failure to provide 'satisfaction' entitles the creditor to sue the debtor under the original claim or for breach of the 'accord'.
+<br>Use <b>'accord'</b> if you intend to enter into an agreement, where the old contract is discharged upon providing of 'satisfaction' under the new contract. 
+ 
+<br><br><b>'Novation'</b>
+<br>The term 'novation' means the agreement, which constitutes the new promise. This new promise itself satisfies the preexisting claims. 
+<br>Failure to deliver the promise under 'novation' does not allow the creditor to sue the debtor under the original claim.
+<br>Use <b>'novation'</b> if you intend to enter into an agreement, where the old contract is discharged when 'novation' becomes effective. 
+
+<br><br><b>'Release'</b>
+<br>The term 'release' means an abandonment of right. It may be given for free. Thus, any form of consideration (including 'satisfaction') is not necessary for 'release'.
+<br>Use <b>'release'</b> if you intend to forgive the debt.
+
+<br><br>'Accord and satisfaction' is the legal couplet. Legal couplets are standardized phrases consisting of two or more words that are near synonyms or components which differences are subtle. Legal couplets are terms of art. 
+
+<br><br><b>Warning:</b> legal terms of art became well accepted and have meanings well known to everyone who practices law. Be careful, as legal terms of art may have special meaning in particular context."
+level: warning
+ignorecase: true
+swap:
+   accord and satisfaction: accord|novation|release
