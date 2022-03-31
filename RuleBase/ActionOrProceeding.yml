@@ -1,0 +1,12 @@
+extends: substitution
+message: Avoid legal couplets
+description: "The term 'proceeding' and the term 'action' are near synonyms. 
+
+<br><br>'Action or proceeding' is the legal couplet. Legal couplets are standardized phrases consisting of two or more words that are near synonyms or components which differences are subtle. Legal couplets are terms of art. 
+
+<br><br><b>Warning:</b> legal terms of art became well accepted and have meanings well known to everyone who practices law. Be careful, as legal terms of art may have special meaning in particular context."
+level: warning
+ignorecase: true
+swap:
+   action or proceeding: action|proceeding
+   actions? or proceedings?: actions|proceedings
