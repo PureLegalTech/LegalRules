@@ -28,3 +28,7 @@ rules:
   Actively:
     name: "Verbosity: 'actively'"
     legal-specific: false
+
+  Actual:
+    name: "Verbosity: 'actual'"
+    legal-specific: false

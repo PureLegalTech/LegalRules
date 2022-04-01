@@ -1,0 +1,28 @@
+extends: existence
+message: "Omit actual in contracts"
+description: "If 'actual' does not signal opposition to something alleged or potential, it may be unnecessary, in which case consider eliminating it."
+nonword: false
+level: warning
+action:
+  name: remove
+tokens:
+  - actual
+exceptions:
+  - actual or alleged
+  - actual or anticipatory
+  - actual or apparent
+  - actual or asserted
+  - actual or conjectural
+  - actual or constructive
+  - actual or contemplated
+  - actual or contingent
+  - actual or deemed
+  - actual or hypothetical
+  - actual or imminent
+  - actual or notional
+  - actual or pending
+  - actual or potential
+  - actual or prospective
+  - actual or suspected
+  - actual or threatened
+  - actual or theoretical

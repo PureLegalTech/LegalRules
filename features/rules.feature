@@ -20,3 +20,10 @@ Feature: Rules
       """
       test.md:3:22:RuleBase.Actively:Omit actively, if it precedes an action
       """
+
+  Scenario: Use of 'actual'
+    When I test "Actual"
+    Then the output should contain exactly:
+      """
+      test.md:3:48:RuleBase.Actual:Omit actual in contracts
+      """
