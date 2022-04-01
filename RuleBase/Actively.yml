@@ -1,5 +1,5 @@
 extends: sequence
-message: "Omit actively, if it precedes an action"
+message: "Omit '%s', if it precedes an action"
 description: "'Actively' is verbose when precedes a part of speech which implies an action."
 level: warning
 ignorecase: true

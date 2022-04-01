@@ -18,5 +18,5 @@ Feature: Rules
     When I test "Actively"
     Then the output should contain exactly:
       """
-      test.md:3:22:RuleBase.Actively:Omit actively, if it precedes an action
+      test.md:3:22:RuleBase.Actively:Omit '%s', if it precedes an action
       """
