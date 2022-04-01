@@ -24,3 +24,7 @@ rules:
     name: "Couplet: 'action or proceeding'"
     legal-specific: true
     tradition: [us, uk]
+
+  Actively:
+    name: "Verbosity: 'actively'"
+    legal-specific: false

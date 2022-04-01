@@ -13,3 +13,10 @@ Feature: Rules
       """
       test.md:3:8:RuleBase.ActionOrProceeding:Avoid legal couplets
       """
+
+  Scenario: Use of 'actively'
+    When I test "Actively"
+    Then the output should contain exactly:
+      """
+      test.md:3:22:RuleBase.Actively:Omit '%s', if it precedes an action
+      """

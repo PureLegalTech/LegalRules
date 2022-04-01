@@ -1,0 +1,15 @@
+extends: sequence
+message: "Omit '%s', if it precedes an action"
+description: "'Actively' is verbose when precedes a part of speech which implies an action."
+level: warning
+ignorecase: true
+nonword: false
+tokens:
+   - pattern: actively
+     skip: 2
+   - tag: VB|VBD|VBG|VBN|VBP|VBZ
+action:
+   name: edit
+   params:
+      - remove
+      - actively
