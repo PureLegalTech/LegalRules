@@ -1,0 +1,26 @@
+# This file contains meta information for Grazie Professional IDE plugin by JetBrains (https://plugins.jetbrains.com/plugin/16136-grazie-professional)
+
+# Any given rule must contain the following information:
+#    name: a rule name, displayed in Preferences > Editor > Natural Languages > Grammar and Style > Rules
+#    legal-specific: true or false - where 'TRUE' means that the rule applies only to the legal prose and does not apply to prose outside legal domain; and 'FALSE' means that the rule may be applicable to the different types of prose, like scientific prose, both nonfictional and fictional prose, business writing, or ordinary language, in this case, enabling the rule must be done with care, as it may affect the non-legal writers
+#    tradition: the approach to legal practice and legal culture — tradition property is not mandatory, by default the rule is applicable to all traditions — US, UK, and EU; the values are case insensitive
+#      us     # legal tradition based on common law with United States specifics
+#      UK     # legal tradition based on common law with Commonwealth countries specifics
+#      Eu     # legal tradition based on Roman law doctrine adopted in continental Europe
+
+#  See an example below:
+#  AccordAndSatisfaction:       # must match the name of the .yml file in RuleBase directory
+#    name: "Doublet: 'accord and satisfaction'"     # rule name displayed in ... > Rules
+#    legal-specific: true     # the rule does not apply to non-legal prose
+#    tradition: [us, uk]     # the rule applies both to American and Commonwealth legal traditions
+
+rules:
+  AccordAndSatisfaction:
+    name: "Doublet: 'accord and satisfaction'"
+    legal-specific: true
+    tradition: [us, uk]
+
+  ActionOrProceeding:
+    name: "Couplet: 'action or proceeding'"
+    legal-specific: true
+    tradition: [us, uk]
