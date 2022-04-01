@@ -6,10 +6,9 @@ ignorecase: true
 nonword: false
 tokens:
    - pattern: actively
-     skip: 2
+   - skip: 2
    - tag: VB|VBD|VBG|VBN|VBP|VBZ
 action:
-   name: edit
-   params:
-      - remove
+   name: remove
+   tokens:
       - actively
