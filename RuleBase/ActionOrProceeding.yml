@@ -8,5 +8,5 @@ description: "The term 'proceeding' and the term 'action' are near synonyms.
 level: warning
 ignorecase: true
 swap:
-   action or proceeding: action|proceeding
-   actions? or proceedings?: actions|proceedings
+  action or proceeding: action|proceeding
+  actions? or proceedings?: actions|proceedings

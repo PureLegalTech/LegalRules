@@ -5,10 +5,10 @@ level: warning
 ignorecase: true
 nonword: false
 tokens:
-   - pattern: actively
-   - skip: 2
-   - tag: VB|VBD|VBG|VBN|VBP|VBZ
+  - pattern: actively
+  - skip: 2
+  - tag: VB|VBD|VBG|VBN|VBP|VBZ
 action:
-   name: remove
-   tokens:
-      - actively
+  name: remove
+  tokens:
+    - actively

@@ -16,7 +16,7 @@
 
 rules:
   AccordAndSatisfaction:
-    name: "Doublet: 'accord and satisfaction'"
+    name: "Couplet: 'accord and satisfaction'"
     legal-specific: true
     tradition: [us, uk]
 
@@ -31,4 +31,8 @@ rules:
 
   Actual:
     name: "Verbosity: 'actual'"
+    legal-specific: false
+
+  Actually:
+    name: "Verbosity: 'actually', 'in fact' etc"
     legal-specific: false

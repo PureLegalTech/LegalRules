@@ -1,0 +1,28 @@
+extends: existence
+message: "Avoid disagreement in contracts"
+description: "'%s' conveys disagreement over facts. Avoid it in contracts."
+level: warning
+ignorecase: true
+nonword: false
+action:
+  name: remove
+tokens:
+  - actually
+  - in actuality
+  - in fact
+  - in actual fact
+  - really
+  - in reality
+  - in point of fact
+  - as a matter of fact
+  - in truth
+  - if truth to be told
+  - to tell the truth
+  - indeed
+  - truly
+  - in sooth
+  - verily
+  - in the concrete
+exceptions:
+  - 'actually kn(ows?|ew)'
+  - '(a(m|re)|(i|wa)s|(b|wer)e|ha(s|ve|d) been) actually aware (of)?'

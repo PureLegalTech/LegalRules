@@ -27,3 +27,10 @@ Feature: Rules
       """
       test.md:3:48:RuleBase.Actual:Omit actual in contracts
       """
+
+  Scenario: Use of 'actually'
+    When I test "Actually"
+    Then the output should contain exactly:
+      """
+      test.md:3:40:RuleBase.Actually:Avoid disagreement in contracts
+      """
