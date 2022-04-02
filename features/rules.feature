@@ -32,6 +32,7 @@ Feature: Rules
     When I test "Actually"
     Then the output should contain exactly:
       """
+      test.md:1:3:RuleBase.Actually:Avoid disagreement in contracts
       test.md:3:40:RuleBase.Actually:Avoid disagreement in contracts
       """
 
