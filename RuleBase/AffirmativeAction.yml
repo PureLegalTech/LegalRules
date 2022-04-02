@@ -1,0 +1,7 @@
+extends: substitution
+message: "'Affirmative' is redundant"
+description: "Use 'action' instead of verbose 'affirmative action'"
+level: warning
+ignorecase: true
+swap:
+  affirmative action: action

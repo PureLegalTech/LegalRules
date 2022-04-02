@@ -36,3 +36,7 @@ rules:
   Actually:
     name: "Verbosity: 'actually', 'in fact' etc"
     legal-specific: false
+
+  AffirmativeAction:
+    name: "Verbosity: 'affirmative action'"
+    legal-specific: true

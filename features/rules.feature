@@ -34,3 +34,10 @@ Feature: Rules
       """
       test.md:3:40:RuleBase.Actually:Avoid disagreement in contracts
       """
+
+  Scenario: Use of 'affirmative action'
+    When I test "AffirmativeAction"
+    Then the output should contain exactly:
+      """
+      test.md:3:10:RuleBase.AffirmativeAction:'Affirmative' is redundant
+      """
