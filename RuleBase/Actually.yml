@@ -1,6 +1,6 @@
 extends: existence
 message: "Avoid disagreement in contracts"
-description: "'%s' conveys disagreement over facts. Avoid it in contracts."
+description: "'Actually', 'in fact' etc. convey disagreement over facts. Avoid them in contracts."
 level: warning
 ignorecase: true
 nonword: false
