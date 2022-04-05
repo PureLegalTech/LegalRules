@@ -11,4 +11,4 @@ level: warning
 scope: heading
 ignorecase: true
 swap:
-  (affirmative|positive) covenants: positive obligations
+  (?:affirmative|positive) covenants: positive obligations
