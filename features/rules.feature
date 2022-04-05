@@ -47,5 +47,6 @@ Feature: Rules
     When I test "AffirmativeCovenants"
     Then the output should contain exactly:
       """
-      test.md:3:0:RuleBase.AffirmativeCovenants:Avoid archaic language
+      test.md:3:15:RuleBase.AffirmativeCovenants:Avoid archaic language
+      test.md:4:15:RuleBase.AffirmativeCovenants:Avoid archaic language
       """
