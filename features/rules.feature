@@ -42,3 +42,10 @@ Feature: Rules
       """
       test.md:3:10:RuleBase.AffirmativeAction:'Affirmative' is redundant
       """
+
+  Scenario: Use of 'affirmative covenants'
+    When I test "AffirmativeCovenants"
+    Then the output should contain exactly:
+      """
+      test.md:3:0:RuleBase.AffirmativeCovenants:Avoid archaic language
+      """

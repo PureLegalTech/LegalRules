@@ -1,0 +1,14 @@
+extends: substitution
+message: "Avoid archaic language"
+description: "Use 'Positive Obligations' instead of the term of art 'Affirmative Covenants'.
+
+<br><br>'Positive obligations' require a party to act, or more specifically, to perform certain actions.
+
+<br><br>See 'Negative covenants' rule for opposite duty.
+
+<br><br><b>Warning:</b> legal terms of art became well accepted and have meanings well known to everyone who practices law. Be careful, as legal terms of art may have special meaning in particular context."
+level: warning
+scope: heading
+ignorecase: true
+swap:
+  (affirmative|positive) covenants: positive obligations

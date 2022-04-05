@@ -1,3 +1,3 @@
 # AffirmativeAction
 
-take any affirmative action in order to 
+Take any affirmative action to 
