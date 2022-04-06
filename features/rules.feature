@@ -18,14 +18,14 @@ Feature: Rules
     When I test "Actively"
     Then the output should contain exactly:
       """
-      test.md:3:22:RuleBase.Actively:Omit actively, if it precedes an action
+      test.md:3:22:RuleBase.Actively:Omit 'actively', if it precedes an action
       """
 
   Scenario: Use of 'actual'
     When I test "Actual"
     Then the output should contain exactly:
       """
-      test.md:3:48:RuleBase.Actual:Omit actual in contracts
+      test.md:3:48:RuleBase.Actual:Omit 'actual' in contracts
       """
 
   Scenario: Use of 'actually'
@@ -49,4 +49,11 @@ Feature: Rules
       """
       test.md:3:15:RuleBase.AffirmativeCovenants:Avoid archaic language
       test.md:4:15:RuleBase.AffirmativeCovenants:Avoid archaic language
+      """
+
+  Scenario: Use of 'affirmatively'
+    When I test "Affirmatively"
+    Then the output should contain exactly:
+      """
+      test.md:3:13:RuleBase.Affirmatively:Omit 'affirmatively', if it precedes an action
       """

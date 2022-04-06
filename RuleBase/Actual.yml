@@ -1,5 +1,5 @@
 extends: existence
-message: "Omit actual in contracts"
+message: "Omit 'actual' in contracts"
 description: "If 'actual' does not signal opposition to something alleged or potential, it may be unnecessary, in which case consider eliminating it."
 nonword: false
 level: warning

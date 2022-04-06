@@ -8,7 +8,7 @@ description: "Use 'Positive Obligations' instead of the term of art 'Affirmative
 
 <br><br><b>Warning:</b> legal terms of art became well accepted and have meanings well known to everyone who practices law. Be careful, as legal terms of art may have special meaning in particular context."
 level: warning
-scope: heading
+#scope: heading
 ignorecase: true
 swap:
-  '(affirmative|positive) covenants': positive obligations
+  '(?:affirmative|positive) covenants': positive obligations

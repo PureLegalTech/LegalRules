@@ -1,5 +1,5 @@
 extends: substitution
-message: Avoid legal couplets
+message: "Avoid legal couplets"
 description: "The term 'proceeding' and the term 'action' are near synonyms. 
 
 <br><br>'Action or proceeding' is the legal couplet. Legal couplets are standardized phrases consisting of two or more words that are near synonyms or components which differences are subtle. Legal couplets are terms of art. 

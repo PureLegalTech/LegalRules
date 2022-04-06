@@ -1,5 +1,5 @@
 extends: substitution
-message: Did the parties intend to agree to accord, novation, or release?
+message: "Did the parties intend to agree to accord, novation, or release?"
 description: "
 
 <b>'Accord'</b>

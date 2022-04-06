@@ -44,3 +44,7 @@ rules:
   AffirmativeCovenants:
     name: "Archaic: 'affirmative covenants'"
     legal-specific: true
+
+  Affirmatively:
+    name: "Verbosity: 'affirmatively'"
+    legal-specific: true
