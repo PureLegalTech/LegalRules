@@ -1,6 +1,6 @@
 Feature: Rules
 
-  Scenario Outline: Use of legal rules
+  Scenario Outline: Use of legal rules with single test phrase
     When I test "<rule>"
     Then the output should contain exactly:
       """
@@ -14,6 +14,17 @@ Feature: Rules
       | Actively              | 1:22          | Omit 'actively', if it precedes an action                        |
       | Actual                | 1:48          | Omit 'actual' in contracts                                       |
       | Actually              | 1:40          | Avoid disagreement in contracts                                  |
-      | AffirmativeAction     | 1:10          | 'Affirmative' is redundant                                       |
-      | AffirmativeCovenants  | 1:15          | Avoid archaic language                                           |
+      | AffirmativeAction     | 1:10          | Avoid verbosity                                       |
       | Affirmatively         | 1:13          | Omit 'affirmatively', if it precedes an action                   |
+
+  Scenario Outline: Use of legal rules with two test phrases
+    When I test "<rule>"
+    Then the output should contain exactly:
+      """
+      test.md:<caretPositionFirst>:RuleBase.<rule>:<message>
+      test.md:<caretPositionSecond>:RuleBase.<rule>:<message>
+      """
+
+    Examples:
+      | rule | caretPositionFirst | caretPositionSecond | message |
+      | AffirmativeCovenants  | 1:15   | 2:15      | Avoid archaic language |

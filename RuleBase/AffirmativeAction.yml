@@ -1,5 +1,5 @@
 extends: substitution
-message: "'Affirmative' is redundant"
+message: "Avoid verbosity"
 description: "Use 'action' instead of verbose 'affirmative action'"
 level: warning
 ignorecase: true
