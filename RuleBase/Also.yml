@@ -1,0 +1,10 @@
+extends: existence
+message: "Omit '%s' in contracts"
+description: "There is no place for 'also', 'in addition' etc in contracts, consider eliminating it."
+nonword: false
+level: warning
+action:
+  name: remove
+tokens:
+  - also
+  - in addition

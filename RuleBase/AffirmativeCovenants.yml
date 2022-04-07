@@ -11,3 +11,5 @@ level: warning
 ignorecase: true
 swap:
   '(?:affirmative|positive) covenants': positive obligations
+
+# TODO - design refactoring to unite positive and negative obligations/covenants into a single clause, named 'Certain Obligations'.

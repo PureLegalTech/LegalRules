@@ -47,4 +47,17 @@ rules:
 
   Affirmatively:
     name: "Verbosity: 'affirmatively'"
+    legal-specific: false
+
+  Allonge:
+    name: "Term of art: 'allonge'"
     legal-specific: true
+
+  Also:
+    name: "Verbosity: 'also'"
+    legal-specific: false
+
+  Applicable:
+    name: "Legalese: 'applicable'"
+    legal-specific: false
+

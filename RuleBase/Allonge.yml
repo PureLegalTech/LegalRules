@@ -1,0 +1,13 @@
+extends: substitution
+message: Did you mean amendment or indorsement certificate?
+description: "Use 'amendment' if you mean <b>an amendment</b> to an agreement or contract. 
+
+<br><br> Use 'indorsement certificate' if you mean <b>a slip of paper</b> attached to a negotiable instrument for receiving further indorsements when original paper is filled.
+
+<br><br>'Allonge' is the legal term of art. 
+
+<br><br><b>Warning:</b> legal terms of art became well accepted and have meanings well known to everyone who practices law. Be careful, as legal terms of art may have special meaning in particular context."
+level: warning
+ignorecase: true
+swap:
+  allonge: amendment|indorsement certificate|indorsement addendum|indorsement supplement

@@ -1,0 +1,27 @@
+extends: substitution
+message: "Consider using a verb instead"
+description: "It's better to use verbs instead of adjectives or abstract nouns."
+level: suggestion
+nonword: false
+ignorecase: true
+swap:
+  #positive
+  '(?:are|be) applicable': apply
+  is applicable: applies
+  '(?:was|were) applicable': applied
+  # negative
+  are not applicable: do not apply
+  is not applicable: does not apply
+  '(?:was|were) not applicable': did not apply
+  # contracted positive
+  "['\u2019]re applicable": " apply"
+  "['\u2019]s applicable": " applies"
+  # contracted negative
+  "aren['\u2019]t applicable": do not apply
+  "isn['\u2019]t applicable": does not apply
+  "(?:wasn|weren)['\u2019]t applicable": did not apply
+
+
+# TODO
+# 1. applicable+noun - design distinguishing fair use (applicable benefit) and verbosity (applicable law).
+# 2. as applicable - valid phrase, ensure not to catch

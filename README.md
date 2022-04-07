@@ -2,11 +2,11 @@ This repository contains a [Vale-compatible](https://github.com/errata-ai/vale) 
 
 The goal is to build and maintain a full-featured style guide for Vale to be adopted by the legal community.
 
-[![Build Status](https://app.travis-ci.com/PureLegalTech/LegalRules.svg?branch=main)](https://app.travis-ci.com/PureLegalTech/LegalRules) ![Vale version](https://img.shields.io/badge/vale-%3E%3D%20v1.0.0-blue.svg) [![license](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Build Status](https://app.travis-ci.com/PureLegalTech/LegalRules.svg?branch=main)](https://app.travis-ci.com/PureLegalTech/LegalRules) ![Vale version](https://img.shields.io/badge/vale-%3E%3D%20v2.5.15-blue.svg) [![license](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Getting Started
 
-> :exclamation: LegalRules requires Vale >= **1.0.0**. :exclamation:
+> :exclamation: LegalRules requires Vale >= **2.5.15**. :exclamation:
 
 Download the [latest release](https://github.com/PureLegalTech/LegalRules/releases), copy the "LegalRules" directory to your `StylesPath`, and include it in your configuration file:
 
