@@ -1,0 +1,167 @@
+extends: substitution
+message: "Use plainer word"
+description: It is better to produce legal documents that everyone can understand on a single reading.
+level: suggestion
+ignorecase: true
+swap:
+  a large number of: many
+  a number of: some|several|many
+  to accord: to give
+  accord respect to: respect
+  acquire: get
+  additional: more
+  additionally: also
+  adjacent to: next to|near
+  advert to: mention
+  afforded: given
+  aforementioned: that|these|previously mentioned #[or best omitted]
+  ambit: reach|scope
+  any and all: all
+  approximately: about|roughly
+  as to: about|of|by|for|in
+  ascertain: determine|find out
+  assist: help
+  at present: now
+  at the place: where
+  at the present time: now|currently
+  '(?:at this point in time|at this time)': now|currently
+  to attempt: to try
+  because of the fact that: because
+  cease: stop
+  circumstances in which: when|where
+  cognizant of: aware of
+  '(?:am|are|be) cognizant of': know
+  is cognizant of: knows
+  '(?:was|were) cognizant of': knew
+  commence: start
+  #conceal: hide
+  concerning the matter of: about|regarding
+  consensus of opinion: consensus
+  consequence: result
+  contiguous to: next to
+  demonstrate: show
+  desire: want
+  despite the fact that: despite|although
+  does not operate to: does not
+  #donate: give
+  #due to: because
+  due to the fact that: because
+  during the course of: during
+  during the time that: while
+  'e\.g\.': for example
+  echelon: level
+  elucidate: explain|clarify
+  to endeavor: to try
+  evince: show
+  excessive number of: too many
+  exclusively: only
+  #to exit: to leave
+  facilitate: help
+  firstly: first
+  secondly: second
+  thirdly: third
+  for the duration of: during|while
+  for the purpose of doing: to do
+  for the reason that: because
+  forthwith: immediately|promptly
+  #frequently: often
+  fundamental: basic
+  has a negative impact: hurts|harms|hinders
+  have a negative impact: hurt|harm|hinder
+  herein: below #[or omit and then cross-reference]
+  hereinabove: above #[or omit and then cross-reference]
+  hereinafter: below #[or omit and then cross-reference]
+  hereinbefore: above #[or omit and then cross-reference]
+  hereunder: under this agreement
+  'i\.e\.': in other words
+  in a case in which: when|where
+  in accordance with: by|under|following
+  in close proximity: near|close to
+  in lieu of: instead of
+  in light of the fact that: because|given that
+  in order to: to
+  in point of fact: in fact #[or omit altogether]
+  in reference to: about
+  in regard to: about|regarding
+  in the course of: during
+  in the event that: if
+  IN WITNESS WHEREOF: Signed
+  indicate: show|say|mean
+  individual: person
+  inquire: ask
+  instant case: here|this case
+  inter alia: among other things
+  '(?:is|are) able to': can
+  '(?:was|were) able to': could
+  is binding on: binds
+  is desirous of: wants
+  is dispositive of: disposes of
+  is unable to: cannot
+  it is apparent that: clearly #or omit
+  it is clear that: clearly #or omit
+  locate: find
+  manner: way
+  methodology: method
+  modify: change
+  mutatis mutandis: with the necessary changes
+  negatively affect: hurt|harm|decrease|hinder
+  notify: tell
+  notwithstanding: despite
+  numerous: many
+  objective: goal
+  observe: see|watch
+  obtain: get
+  on a number of occasions: often|sometimes
+  on the basis of: under|based on
+  on the part of: by
+  owing to the fact that: because|since
+  pari passu: equally
+  per annum: per year|a year|annually|yearly
+  period of time: time|period
+  permit: let|allow
+  personnel: people
+  point in time: time|point
+  portion: part
+  possess: have
+  prima facie: on the face of it|it appears
+  prior to: before
+  procure: get
+  provide: give
+  provision of law: law
+  purchase: buy
+  pursuant to: under|by
+  rate of speed: speed
+  referred to as: called
+  remainder: rest
+  render assistance: help
+  request: ask #(?:verb)
+  require: need
+  retain: keep
+  #  said : the|this
+  set forth: set out|stated in|in
+  subsequent: later
+  subsequent to: after
+  subsequently: after|later
+  substantiate: prove
+  such: this|that|these|those|the
+  sufficient: enough
+  sufficient number of: enough
+  termination: end
+  the case at bar: this case
+  the fact that: that
+  the instant case: this case
+  the manner in which: how
+  thereafter: later in it|in them|inside
+  therein: of|from|because
+  thereof: of that
+  thereto: about|to that|it
+  to the effect that: that
+  until such time as: until
+  upon: on
+  utilize: use
+  '(?:am|are|be) aware (?:of)?': know
+  is aware (?:of)?: knows
+  '(?:was|were) aware (?:of)?': knew
+  'been aware (?:of)?': known
+  wherein: in the
+  with respect to: in connection with

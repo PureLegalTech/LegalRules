@@ -81,6 +81,10 @@ rules:
     name: "Archaic: 'negative covenants'"
     legal-specific: true
 
+  PlainLegalEnglish:
+    name: "Standard legal English"
+    legal-specific: false
+
   Provided:
     name: "Proviso: 'provided that'"
     legal-specific: true
