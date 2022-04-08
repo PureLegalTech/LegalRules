@@ -73,6 +73,10 @@ rules:
     name: "Inspection: number of arbitrators"
     legal-specific: true
 
+  AsAmended:
+    name: "Verbosity: 'as amended'"
+    legal-specific: true
+
   Contractions:
     name: "Contractions in legal prose"
     legal-specific: false

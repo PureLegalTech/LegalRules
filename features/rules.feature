@@ -312,3 +312,17 @@ Feature: Rules
       test.md:171:1:RuleBase.PlainLegalEnglish:Use plainer word
       test.md:172:1:RuleBase.PlainLegalEnglish:Use plainer word
       """
+
+  Scenario: Use of 'as amended'
+    When I test "AsAmended"
+    Then the output should contain exactly:
+      """
+      test.md:3:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:4:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:5:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:6:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:8:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:9:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:10:25:RuleBase.AsAmended:Avoid verbosity
+      test.md:11:25:RuleBase.AsAmended:Avoid verbosity
+      """

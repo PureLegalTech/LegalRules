@@ -1,0 +1,10 @@
+extends: existence
+message: "Avoid verbosity"
+description: "Avoid verbosity in contracts, 'as amended' serves no purpose, consider eliminating it."
+nonword: false
+level: warning
+action:
+  name: remove
+tokens:
+  - ',? as amended,?'
+  - ',? as amended (from time to time)?,?'
