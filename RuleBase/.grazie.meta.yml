@@ -61,6 +61,10 @@ rules:
     name: "Verbosity: 'also'"
     legal-specific: false
 
+  AmidstAmongstWhilst:
+    name: "Archaic: 'amidst', 'amongst', 'whilst'"
+    legal-specific: false
+
   ApplicablePlusVerb:
     name: "Legalese: to be plus 'applicable'"
     legal-specific: false
@@ -68,6 +72,10 @@ rules:
   ArbitratorInspection:
     name: "Inspection: number of arbitrators"
     legal-specific: true
+
+  Contractions:
+    name: "Contractions in legal prose"
+    legal-specific: false
 
   NegativeCovenants:
     name: "Archaic: 'negative covenants'"

@@ -1,0 +1,12 @@
+extends: existence
+message: Safer to avoid contractions in legal prose
+description: Although some experts advocate using contractions in legal prose, formality remains the safer route.
+level: suggestion
+ignorecase: true
+tokens:
+  # Contractions
+  # with auxiliary verb and not
+  - "(?:wo|would|might|ca|could|sha|should|must|ai|are|is|was|were|does|do|did|has|have|had|ought|need|dare)n['\u2019]t"
+
+  # contractions
+  - "['\u2019](?:ll|d|m|s|re|ve)"

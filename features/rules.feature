@@ -101,3 +101,47 @@ Feature: Rules
       test.md:32:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:34:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       """
+
+  Scenario: Use of 'amidst', 'amongst', 'whilst'
+    When I test "AmidstAmongstWhilst"
+    Then the output should contain exactly:
+      """
+      test.md:1:1:RuleBase.AmidstAmongstWhilst:Avoid archaic language
+      test.md:3:13:RuleBase.AmidstAmongstWhilst:Avoid archaic language
+      test.md:5:1:RuleBase.AmidstAmongstWhilst:Avoid archaic language
+      test.md:7:1:RuleBase.AmidstAmongstWhilst:Avoid archaic language
+      """
+
+  Scenario: Use of contractions in legal prose
+    When I test "Contractions"
+    Then the output should contain exactly:
+      """
+      test.md:3:1:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:7:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:16:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:25:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:31:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:40:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:47:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:57:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:65:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:71:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:78:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:84:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:91:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:99:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:107:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:113:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:120:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:127:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:135:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:142:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:151:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:3:159:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:7:2:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:8:2:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:9:2:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:10:2:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:11:3:RuleBase.Contractions:Safer to avoid contractions in legal prose
+      test.md:12:2:RuleBase.Contractions:Safer to avoid contractions in legal prose
+"""

@@ -1,0 +1,9 @@
+extends: substitution
+message: "Avoid archaic language"
+description: "Use 'amid', 'among', 'while' instead of archaic 'amidst', 'amongst', 'whilst'."
+level: suggestion
+ignorecase: true
+swap:
+  amidst: amid
+  amongst: among
+  'while?st': while
