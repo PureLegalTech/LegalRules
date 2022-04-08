@@ -1,0 +1,129 @@
+extends: sequence
+message: Number of arbitrators is usually odd
+description: "There is a possibility that even number of arbitrators may not reach a consensus, as one arbitrator usually has only one vote and the decision is made by simple majority."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  #catch wrong "two (2) arbitrators"
+  #  - pattern: 'be|by|from'
+  - pattern: 'two|four|six|eight|ten'
+  - pattern: '\('
+  - pattern: '[2468]|10'
+  - pattern: '\)'
+    skip: 5
+  - pattern: arbitrators
+action:
+  name: replace
+  params:
+    - 'one arbitrator'
+    - 'three arbitrators'
+    - 'five arbitrators'
+
+---
+
+extends: sequence
+message: Number of arbitrators is usually odd
+description: "There is a possibility that even number of arbitrators may not reach a consensus, as one arbitrator usually has only one vote and the decision is made by simple majority."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  #catch wrong "two arbitrators"
+  #  - pattern: 'be|by|from'
+  - pattern: 'two|four|six|eight|ten'
+    skip: 5
+  - pattern: arbitrators
+action:
+  name: replace
+  params:
+    - 'one arbitrator'
+    - 'three arbitrators'
+    - 'five arbitrators'
+
+---
+
+extends: sequence
+message: Number of arbitrators is usually odd
+description: "There is a possibility that even number of arbitrators may not reach a consensus, as one arbitrator usually has only one vote and the decision is made by simple majority."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  #catch wrong "2 arbitrators"
+  #  - pattern: 'be|by|from'
+  - pattern: '[2468]|10'
+    skip: 5
+  - pattern: arbitrators
+action:
+  name: replace
+  params:
+    - 'one arbitrator'
+    - 'three arbitrators'
+    - 'five arbitrators'
+
+---
+
+extends: sequence
+message: Number of arbitrators is usually odd
+description: "There is a possibility that even number of arbitrators may not reach a consensus, as one arbitrator usually has only one vote and the decision is made by simple majority."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  #catch wrong "arbitrators shall be two (2)"
+  - pattern: arbitrators
+  - tag: MD
+  - pattern: be
+  - pattern: 'two|four|six|eight|ten'
+  - pattern: '\('
+  - pattern: '[2468]|10'
+  - pattern: '\)'
+action:
+  name: replace
+  params:
+    - 'arbitrators will be one'
+    - 'arbitrators will be three'
+    - 'arbitrators will be five'
+
+---
+
+extends: sequence
+message: Number of arbitrators is usually odd
+description: "There is a possibility that even number of arbitrators may not reach a consensus, as one arbitrator usually has only one vote and the decision is made by simple majority."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  #catch wrong "arbitrators shall be two"
+  - pattern: arbitrators
+  - tag: MD
+  - pattern: be
+  - pattern: 'two|four|six|eight|ten'
+action:
+  name: replace
+  params:
+    - 'arbitrators will be one'
+    - 'arbitrators will be three'
+    - 'arbitrators will be five'
+
+---
+
+extends: sequence
+message: Number of arbitrators is usually odd
+description: "There is a possibility that even number of arbitrators may not reach a consensus, as one arbitrator usually has only one vote and the decision is made by simple majority."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  #catch wrong "arbitrators shall be 2"
+  - pattern: arbitrators
+  - tag: MD
+  - pattern: be
+  - pattern: '[2468]|10'
+action:
+  name: replace
+  params:
+    - 'arbitrators will be one'
+    - 'arbitrators will be three'
+    - 'arbitrators will be five'

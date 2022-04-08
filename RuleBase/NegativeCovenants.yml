@@ -1,0 +1,15 @@
+extends: substitution
+message: "Avoid archaic language"
+description: "Use 'Negative Obligations' instead of the term of art 'Negative Covenants'.
+
+<br><br>'Negative obligations' require a party to refrain from action, or more specifically, not to perform certain actions.
+
+<br><br>See 'Affirmative covenants' rule for opposite duty.
+
+<br><br><b>Warning:</b> legal terms of art became well accepted and have meanings well known to everyone who practices law. Be careful, as legal terms of art may have special meaning in particular context."
+level: warning
+ignorecase: true
+swap:
+  negative covenants: negative obligations
+
+# TODO - design refactoring to unite positive and negative obligations/covenants into a single clause, named 'Certain Obligations'.

@@ -61,3 +61,10 @@ rules:
     name: "Legalese: 'applicable'"
     legal-specific: false
 
+  ArbitratorInspection:
+    name: "Inspection: number of arbitrators"
+    legal-specific: true
+
+  NegativeCovenants:
+    name: "Archaic: 'negative covenants'"
+    legal-specific: true
