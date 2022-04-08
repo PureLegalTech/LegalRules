@@ -37,6 +37,10 @@ rules:
     name: "Verbosity: 'actually', 'in fact' etc"
     legal-specific: false
 
+  Affirmative:
+    name: "Verbosity: 'affirmative'"
+    legal-specific: false
+
   AffirmativeAction:
     name: "Verbosity: 'affirmative action'"
     legal-specific: true
@@ -57,8 +61,8 @@ rules:
     name: "Verbosity: 'also'"
     legal-specific: false
 
-  Applicable:
-    name: "Legalese: 'applicable'"
+  ApplicablePlusVerb:
+    name: "Legalese: to be plus 'applicable'"
     legal-specific: false
 
   ArbitratorInspection:
@@ -67,4 +71,8 @@ rules:
 
   NegativeCovenants:
     name: "Archaic: 'negative covenants'"
+    legal-specific: true
+
+  Provided:
+    name: "Proviso: 'provided that'"
     legal-specific: true

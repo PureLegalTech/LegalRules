@@ -14,6 +14,7 @@ Feature: Rules
 #      | Actively              | 1:22          | Omit 'actively', if it precedes an action                        |
       | Actual                | 1:48          | Omit 'actual' in contracts                                       |
       | Actually              | 1:40          | Avoid disagreement in contracts                                  |
+      | Affirmative           | 3:10          | Avoid verbosity                                                  |
       | AffirmativeAction     | 1:10          | Avoid verbosity                                       |
       #| Affirmatively         | 1:13          | Omit 'affirmatively', if it precedes an action                   |
       | Allonge               | 1:11          | Did you mean amendment or indorsement certificate?               |
@@ -39,24 +40,24 @@ Feature: Rules
       test.md:2:13:RuleBase.Also:Omit 'in addition' in contracts
       """
 
-  Scenario: Use of 'applicable'
-    When I test "Applicable"
+  Scenario: Use of 'applicable plus verb'
+    When I test "ApplicablePlusVerb"
     Then the output should contain exactly:
       """
-      test.md:3:18:RuleBase.Applicable:Consider using a verb instead
-      test.md:5:10:RuleBase.Applicable:Consider using a verb instead
-      test.md:7:11:RuleBase.Applicable:Consider using a verb instead
-      test.md:11:18:RuleBase.Applicable:Consider using a verb instead
-      test.md:13:11:RuleBase.Applicable:Consider using a verb instead
-      test.md:15:11:RuleBase.Applicable:Consider using a verb instead
-      test.md:17:18:RuleBase.Applicable:Consider using a verb instead
-      test.md:21:5:RuleBase.Applicable:Consider using a verb instead
-      test.md:23:3:RuleBase.Applicable:Consider using a verb instead
-      test.md:27:18:RuleBase.Applicable:Consider using a verb instead
-      test.md:29:11:RuleBase.Applicable:Consider using a verb instead
-      test.md:31:11:RuleBase.Applicable:Consider using a verb instead
-      test.md:33:18:RuleBase.Applicable:Consider using a verb instead
-      """
+      test.md:5:18:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:7:10:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:9:11:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:13:18:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:15:11:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:17:11:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:19:18:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:23:5:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:25:3:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:29:18:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:31:11:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:33:11:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+      test.md:35:18:RuleBase.ApplicablePlusVerb:Consider using a verb instead
+"""
 
 # this test shall fail, when issue with --- delimiter and skip will be solved
   Scenario: Use of 'arbitrator inspection'
@@ -77,4 +78,26 @@ Feature: Rules
     When I test "Actively"
     Then the output should contain exactly:
       """
+      """
+
+  Scenario: Use of 'provided'
+    When I test "Provided"
+    Then the output should contain exactly:
+      """
+      test.md:3:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:5:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:7:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:9:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:11:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:13:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:15:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:17:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:20:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:22:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:24:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:26:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:28:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:30:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:32:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:34:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       """

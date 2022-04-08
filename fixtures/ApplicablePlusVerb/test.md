@@ -1,3 +1,5 @@
+# Valid
+
 Positive
 
 These provisions are applicable
@@ -31,3 +33,7 @@ This rule isn't applicable
 This rule wasn't applicable
 
 These provisions weren't applicable
+
+# False positive
+
+any such date, as applicable. 

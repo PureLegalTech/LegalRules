@@ -20,7 +20,8 @@ swap:
   "aren['\u2019]t applicable": do not apply
   "isn['\u2019]t applicable": does not apply
   "(?:wasn|weren)['\u2019]t applicable": did not apply
-
+exceptions:
+  - as applicable
 
 # TODO
 # 1. applicable+noun - design distinguishing fair use (applicable benefit) and verbosity (applicable law).

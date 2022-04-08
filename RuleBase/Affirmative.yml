@@ -1,0 +1,12 @@
+extends: existence
+message: "Avoid verbosity"
+description: "'Affirmative' is verbose in contracts."
+level: warning
+ignorecase: true
+nonword: false
+action:
+  name: remove
+tokens:
+  - affirmative
+exceptions:
+  - 'affirmative vote'

@@ -1,0 +1,14 @@
+extends: substitution
+message: Did you mean limitation(qualifiaction), exception or condition?
+description: "Use 'but' if you want to introduce a <b>limitation</b> or <b>qualification</b> to the rule.
+  
+<br><br> Use 'except that' if you want to introduce an <b>exception</b> to the rule.
+
+<br><br> Use 'if' if you want to introduce a <b>condition</b> to the rule.
+"
+level: warning
+ignorecase: true
+swap:
+  'provid(?:ed|ing)(?: always|,? however,?| furthermore,?)? that': but|except that|if
+#exceptions:
+#  - 'provided (by|for|in|to|with|on|at|as|from|through|under|pursuant)'
