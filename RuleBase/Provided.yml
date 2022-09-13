@@ -9,6 +9,6 @@ description: "Use 'but' if you want to introduce a <b>limitation</b> or <b>quali
 level: warning
 ignorecase: true
 swap:
-  'provid(?:ed|ing)(?: always|,? however,?| furthermore,?)? that': but|except that|if
+  'provid(?:ed|ing)(?: always|,? however,?| further(more)?,?)? that': but|except that|if
 #exceptions:
 #  - 'provided (by|for|in|to|with|on|at|as|from|through|under|pursuant)'

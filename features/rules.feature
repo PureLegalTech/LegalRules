@@ -92,14 +92,18 @@ Feature: Rules
       test.md:13:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:15:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:17:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
-      test.md:20:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
-      test.md:22:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:19:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:21:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:24:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:26:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:28:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:30:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:32:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       test.md:34:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:36:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:38:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:40:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
+      test.md:42:30:RuleBase.Provided:Did you mean limitation(qualifiaction), exception or condition?
       """
 
   Scenario: Use of 'amidst', 'amongst', 'whilst'

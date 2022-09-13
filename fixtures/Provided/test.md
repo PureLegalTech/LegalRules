@@ -14,6 +14,10 @@ You are free to use software provided furthermore that
 
 You are free to use software provided furthermore, that
 
+You are free to use software provided further that
+
+You are free to use software provided further, that
+
 You are free to use software provided that
 
 
@@ -30,6 +34,10 @@ You are free to use software providing however, that
 You are free to use software providing furthermore that
 
 You are free to use software providing furthermore, that
+
+You are free to use software providing further that
+
+You are free to use software providing further, that
 
 You are free to use software providing that
 
